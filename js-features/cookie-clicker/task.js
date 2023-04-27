@@ -11,13 +11,7 @@ clickCounter.parentNode.insertBefore(clickSpeed, clickCounter.nextSibling);
 cookie.onclick = function () {
 	clickNumber++;
 
-	if (cookie.width === 200) {
-		cookie.width = 150;
-		cookie.height = 150;
-	} else {
-		cookie.width = 200;
-		cookie.height = 200;
-	}
+	cookie.width === 200 ? (cookie.width = 150, cookie.height = 150) : (cookie.width = 200, cookie.height = 200);
 
 	clickCounter.textContent = clickNumber
 
