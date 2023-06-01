@@ -23,9 +23,7 @@ function displayPoll(poll) {
 		const answerButton = document.createElement('button');
 		answerButton.className = 'poll__answer';
 		answerButton.textContent = answer;
-		answerButton.addEventListener('click', function (){
-			alert('Спасибо, ваш голос засчитан!');
-		});
+		answerButton.addEventListener('click',  () => alert('Спасибо, ваш голос засчитан!'));
 		pollAnswers.appendChild(answerButton);
 	});
 }
